@@ -47,7 +47,7 @@ def main():
             print("3. Remove a wallet address")
             print("4. Exit")
             
-            choice = input("\nEnter your choice (1-4): ")
+            choice = input("\nEnter your choice Pookie (1-4): ")
             
             if choice == '1':
                 name = input("Enter the name of the wallet to copy/display: ")
@@ -82,13 +82,13 @@ def main():
             else:
                 input("Invalid choice. Press Enter to try again...")
         else:
-            print("No wallet addresses saved.")
+            print(" Umm, No wallet addresses saved.")
             name = input("Enter a name for your first wallet: ")
             address = input("Enter the wallet address: ")
             addresses[name] = address
             save_addresses(addresses)
 
-    print("Thank you for using Multi-Wallet Address Copier!")
+    print("Arigatou gozamaisu!")
 
 if __name__ == "__main__":
     main()
