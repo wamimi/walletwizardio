@@ -1,6 +1,6 @@
 # Multi-Wallet Address Copier
 
-A quick question, how do you copy your wallet address(s)? Whenever you need to paste them somewhere? Personally, I always have to log into metamask or a certain wallet, copy the wallet address, then paste it. Or, if its wriiten somewhere, then i will have to manually copy it from there. Quite a long process if you ask me - Enter walletwizardio, a simple script.
+A quick question, how do you copy your wallet address(s)? Whenever you need to paste them somewhere? Personally, I always have to log into metamask or a certain wallet, copy the wallet address, then paste it. Or, if its written somewhere, then i will have to manually copy it from there. Quite a long process if you ask me - Enter walletwizardio, a simple CLI, we all love doing stuffs from the commandline
 
 This Python script provides an easy way to store, retrieve, and copy multiple cryptocurrency wallet addresses without the need to log into your wallet applications each time. It's designed for users who manage multiple wallets and want a quick, offline solution for accessing their addresses.
 
@@ -17,7 +17,7 @@ This Python script provides an easy way to store, retrieve, and copy multiple cr
 ## Requirements
 
 - Python 3.6 or higher
-- (Optional) pyperclip library for clipboard functionality
+- pyperclip library for clipboard functionality
 
 ## Installation
 
