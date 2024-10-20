@@ -1,6 +1,6 @@
 # Multi-Wallet Address Copier
 
-A quick question, how do you copy your wallet address(s)? Whenever you need to paste them somewhere? Personally, I always have to log into metamask or a certain wallet, copy the wallet address, then paste it. Or, if its written somewhere, then i will have to manually copy it from there. Quite a long process if you ask me - Enter walletwizardio, a simple CLI, we all love doing stuffs from the commandline
+A quick and easy way to manage and copy your cryptocurrency wallet addresses from the command line or a simple GUI.
 
 This Python script provides an easy way to store, retrieve, and copy multiple cryptocurrency wallet addresses without the need to log into your wallet applications each time. It's designed for users who manage multiple wallets and want a quick, offline solution for accessing their addresses.
 
@@ -12,34 +12,70 @@ This Python script provides an easy way to store, retrieve, and copy multiple cr
 - Automatically copy addresses to clipboard (if pyperclip is installed)
 - Add and remove wallet addresses as needed
 - Simple command-line interface
+- Basic GUI for easier access
 - Cross-platform compatibility (Windows, macOS, Linux)
 
 ## Requirements
 
 - Python 3.6 or higher
 - pyperclip library for clipboard functionality
+- tkinter for GUI functionality (usually comes pre-installed with Python)
 
 ## Installation
 
-1. Clone this repository or download the `multi_wallet_address_copier.py` file.
+1. Clone this repository or download the `multi_wallet_address_copier.py` and `metamask_gui.py` files.
 
-git clone <https://github.com/yourusername/multi-wallet-address-copier.git>
+git clone <https://github.com/wamimi/walletwizardio.git>
 
-cd multi-wallet-address-copier
+cd walletwizardio
 
-2. Ensure you have Python 3 installed. You can check your Python version by running:
+2. Ensure you have Python 3 installed. 
 
-python3 --version (note this is on Linux)
+   - Linux/macOS:
+     ```
+     python3 --version
+     ```
+   - Windows:
+     ```
+     python --version
+     ```
 
-3. Install pyperclip for clipboard functionality:
+3. Install required libraries:
 
-pip3 install pyperclip
+   - Linux/macOS:
+     ```
+     pip3 install pyperclip
+     ```
+   - Windows:
+     ```
+     pip install pyperclip
+     ```
+
+4. If tkinter is not installed (mainly for Linux users):
+
+   - Ubuntu/Debian:
+     ```
+     sudo apt-get install python3-tk
+     ```
+   - Fedora:
+     ```
+     sudo dnf install python3-tkinter
+     ```
 
 ## Usage
 
+### Command Line Interface
+
 1. Run the script:
 
-python3 multi_wallet_address_copier.py
+   - Linux/macOS:
+     ```
+     python3 metamask_address_copier.py
+     ```
+   - Windows:
+     ```
+     python metamask_address_copier.py
+     ```
 
 2. On first run, you'll be prompted to enter a name and address for your first wallet.
 
@@ -49,12 +85,32 @@ python3 multi_wallet_address_copier.py
    - Remove a wallet address
    - Exit the program
 
+### Graphical User Interface
+
+1. Run the GUI script:
+
+   - Linux/macOS:
+     ```
+     python3 metamask_gui.py
+     ```
+   - Windows:
+     ```
+     python metamask_gui.py
+     ```
+
+2. A window will appear with a button labeled "Run MetaMask Address Copier".
+
+3. Click the button to launch the wallet address copier program.
+
+4. The program will open in a new window, allowing you to interact with it as described in the Command Line Interface section.
+
 ## How It Works
 
 - The script stores your wallet addresses in a file named `wallet_addresses.json` in the same directory as the script.
 - When you run the script, it checks for this file and loads the addresses if it exists.
 - You can add, remove, or view addresses at any time using the menu options.
 - If pyperclip is installed, the script will automatically copy the selected address to your clipboard. If not, it will display the address for manual copying.
+- The GUI provides a simple interface to launch the main program without needing to use the command line.
 
 ## Security Note
 
@@ -71,3 +127,4 @@ Contributions, issues, and feature requests are welcome!
 ## License
 
 This project is [MIT] licensed.
+
